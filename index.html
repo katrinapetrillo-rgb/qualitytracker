@@ -614,24 +614,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Form
-  document.getElementById('submitBtn').addEventListener('click', submitForm);
-  document.getElementById('resetBtn').addEventListener('click', resetForm);
-
-  // File upload
-  var fileInput = document.getElementById('fileInput');
-  var uploadZone = document.getElementById('uploadZone');
-  fileInput.addEventListener('change', function() { handleFiles(fileInput.files); fileInput.value = ''; });
-  uploadZone.addEventListener('dragover', function(e) { e.preventDefault(); uploadZone.classList.add('drag'); });
-  uploadZone.addEventListener('dragleave', function() { uploadZone.classList.remove('drag'); });
-  uploadZone.addEventListener('drop', function(e) { e.preventDefault(); uploadZone.classList.remove('drag'); handleFiles(e.dataTransfer.files); });
-
-  // Show/hide Other issue text field
-  document.getElementById('qi_other').addEventListener('change', function() {
-    document.getElementById('otherIssueField').style.display = this.checked ? 'block' : 'none';
-    if (!this.checked) document.getElementById('f_other_issue').value = '';
-  });
-
   // Login
   document.getElementById('loginBtn').addEventListener('click', tryLogin);
   document.getElementById('loginPass').addEventListener('keydown', function(e) { if(e.key==='Enter') tryLogin(); });

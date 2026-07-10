@@ -336,134 +336,30 @@ td{font-size:13px;padding:12px 16px;vertical-align:middle;}
 <div id="page-form" class="page active">
   <div class="form-page">
     <div class="form-header">
-      <h1>Report a Quality Issue</h1>
-      <p>Submit quality feedback for review by the operations team.</p>
+      <h1>Quality Issue Submission</h1>
+      <p>This tool has been upgraded to a new platform.</p>
     </div>
 
-    <div id="formInner">
-      <div class="form-card">
-        <div class="card-title">Client &amp; Account Info</div>
-        <div class="field-row col2">
-          <div class="field">
-            <label>Client Name <span class="req">*</span></label>
-            <input type="text" id="f_client" placeholder="e.g. Boden"/>
-          </div>
-          <div class="field">
-            <label>Account Manager <span class="req">*</span></label>
-            <select id="f_am">
-              <option value="">Select…</option>
-              <option>Erika</option>
-              <option>Becca</option>
-              <option>Erin</option>
-              <option>Jenel</option>
-              <option>Stacy</option>
-              <option>Caroline</option>
-              <option>Jorden</option>
-              <option>Virginia</option>
-              <option>Jane</option>
-              <option>Angelina K</option>
-            </select>
-          </div>
+    <div class="redirect-notice" style="max-width:600px;margin:40px auto;text-align:center;">
+      <div class="form-card" style="padding:40px;">
+        <div style="font-size:48px;margin-bottom:20px;">🚀</div>
+        <h2 style="margin:0 0 16px 0;color:#1e293b;">We've Moved!</h2>
+        <p style="color:#64748b;font-size:16px;line-height:1.6;margin-bottom:24px;">
+          Quality issue submissions have moved to our new Stylitics platform.<br/>
+          Please use the link below to submit new issues.
+        </p>
+        <a href="https://tools.stylitics.com/quality-tracker/submit"
+           class="submit-btn"
+           style="display:inline-block;text-decoration:none;padding:14px 32px;">
+          Go to New Submit Form →
+        </a>
+        <div style="margin-top:20px;padding:12px 16px;background:#f1f5f9;border-radius:8px;display:inline-block;">
+          <code style="color:#3b82f6;font-size:14px;user-select:all;">https://tools.stylitics.com/quality-tracker/submit</code>
         </div>
-        <div class="field-row col2">
-          <div class="field">
-            <label>CS Director</label>
-            <select id="f_csd">
-              <option value="">Select…</option>
-              <option>Molly</option>
-              <option>Marine</option>
-              <option>Katrina</option>
-              <option>Nikki P</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Ops Lead <span class="req">*</span></label>
-            <select id="f_ops">
-              <option value="">Select…</option>
-              <option>Courtney</option>
-              <option>Maddie T</option>
-              <option>Angelina S</option>
-              <option>Rebekah</option>
-              <option>Taylor</option>
-              <option>Emily</option>
-              <option>Nikki B</option>
-            </select>
-          </div>
-        </div>
-        <div class="field-row col2">
-          <div class="field">
-            <label>Date <span class="req">*</span></label>
-            <input type="date" id="f_date"/>
-          </div>
-          <div class="field">
-            <label>Severity</label>
-            <div class="severity-row" style="margin-top:2px;">
-              <div class="sev-opt low"><input type="radio" name="severity" id="sev_low" value="low" checked/><label for="sev_low">🟢 Low</label></div>
-              <div class="sev-opt med"><input type="radio" name="severity" id="sev_med" value="medium"/><label for="sev_med">🟡 Medium</label></div>
-              <div class="sev-opt high"><input type="radio" name="severity" id="sev_high" value="high"/><label for="sev_high">🔴 High</label></div>
-            </div>
-          </div>
-        </div>
+        <p style="color:#94a3b8;font-size:13px;margin-top:24px;">
+          The Dashboard, AI Analysis, and Chat features are still available here.
+        </p>
       </div>
-
-      <div class="form-card">
-        <div class="card-title">Quality Issue(s) <span class="req">*</span></div>
-        <div class="issue-grid">
-          <div class="issue-opt"><input type="checkbox" id="qi_merch" value="Adherence to merchandising rules"/><label for="qi_merch">Adherence to merchandising rules</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_shopper" value="Alignment with shopper preferences / shopper resonance"/><label for="qi_shopper">Alignment with shopper preferences / shopper resonance</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_brand" value="Alignment with brand standards"/><label for="qi_brand">Alignment with brand standards</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_outfit" value="Outfit Variety"/><label for="qi_outfit">Outfit Variety</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_visual" value="Visual / image quality"/><label for="qi_visual">Visual / image quality</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_matching" value="Matching sets (exact match accuracy)"/><label for="qi_matching">Matching sets (exact match accuracy)</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_stm" value="STM (exact match accuracy)"/><label for="qi_stm">STM (exact match accuracy)</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_stmscale" value="STM (scale)"/><label for="qi_stmscale">STM (scale)</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_collage" value="Collage size and placement"/><label for="qi_collage">Collage size and placement</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_pairings" value="Logical product pairings"/><label for="qi_pairings">Logical product pairings</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_season" value="Seasonality"/><label for="qi_season">Seasonality</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_imgissue" value="Image Issue — failing to show correct/updated image"/><label for="qi_imgissue">Image Issue — failing to show correct/updated image</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_sts" value="Shop the Set"/><label for="qi_sts">Shop the Set</label></div>
-          <div class="issue-opt"><input type="checkbox" id="qi_other" value="Other"/><label for="qi_other">Other</label></div>
-        </div>
-        <div class="field" id="otherIssueField" style="display:none;margin-top:12px;">
-          <label>Describe Other Issue</label>
-          <input type="text" id="f_other_issue" placeholder="Please describe the issue…"/>
-        </div>
-      </div>
-
-      <div class="form-card">
-        <div class="card-title">Details</div>
-        <div class="field">
-          <label>Description / Notes <span class="req">*</span></label>
-          <textarea id="f_details" placeholder="Describe the quality issue in detail. Include specific examples, affected SKUs, or context that would help the ops team…" style="min-height:130px;"></textarea>
-        </div>
-        <div class="field">
-          <label>Meeting Transcript</label>
-          <textarea id="f_gong" placeholder="Paste Gong or Granola transcript here…" style="min-height:100px;"></textarea>
-        </div>
-      </div>
-
-      <div class="form-card">
-        <div class="card-title">Attachments</div>
-        <div class="field">
-          <label>Screenshots / Files</label>
-          <div class="upload-zone" id="uploadZone">
-            <input type="file" id="fileInput" multiple accept="image/*,.pdf,.txt,.mp4,.mov"/>
-            <div class="upload-icon">📎</div>
-            <p><strong>Click to upload</strong> or drag and drop</p>
-            <p style="font-size:12px;margin-top:4px;">Screenshots, PDFs, meeting recordings (mp4/mov)</p>
-          </div>
-          <div class="file-list" id="fileList"></div>
-        </div>
-      </div>
-
-      <button class="submit-btn" id="submitBtn">Submit Quality Issue</button>
-    </div>
-
-    <div class="success" id="successView">
-      <div class="success-icon">✓</div>
-      <h2>Issue Submitted</h2>
-      <p>Your quality report has been received.<br/>The operations team will review it shortly.</p>
-      <button class="ghost-btn" id="resetBtn">Submit Another Issue</button>
     </div>
   </div>
 </div>
